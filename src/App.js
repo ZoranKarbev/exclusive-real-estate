@@ -1,11 +1,9 @@
-import './App.css';
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Exclusive Real Estate</h1>
-    </div>
-  );
-}
+    <>
+      <h1>Esclusive Real Estate</h1>
+    </>
+  )
+};
 
 export default App;
