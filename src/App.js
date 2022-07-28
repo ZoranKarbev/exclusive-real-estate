@@ -4,6 +4,7 @@ import ForgotPasswordPage from "./Pages/ForgotPasswordPage/ForgotPasswordPage";
 import OffersPage from "./Pages/OffersPage/OffersPage";
 import LoginPage from "./Pages/LoginPage/LoginPage";
 import SignUpPage from "./Pages/SignUpPage/SignUpPage";
+import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 // import ProfilePage from "./Pages/ProfilePage/ProfilePage";
 
 const App = () => {
@@ -16,7 +17,8 @@ const App = () => {
         <Route path="/offers" element={<OffersPage />} />
         <Route path="/profile" element={<LoginPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/sing-up" element={<SignUpPage />} />
+        <Route path="/sign-up" element={<SignUpPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>
   )
