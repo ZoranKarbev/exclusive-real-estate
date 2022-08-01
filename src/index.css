@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap'); */
+:root {
+  --main-font-family: 'Open Sans', sans-serif;
+  --headers-font-family: 'Cinzel', serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,10 +14,14 @@ html::-webkit-scrollbar {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--main-font-family);
   background-color: #f2f4f8;
   margin: 0;
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headers-font-family);
 }
 
 a {
@@ -37,7 +47,7 @@ button {
   height: 3rem;
   width: 100%;
   outline: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--main-font-family);
   padding: 0 3rem;
   font-size: 1rem;
 }
@@ -578,7 +588,7 @@ button {
 
 .logOut {
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--main-font-family);
   font-size: 1rem;
   font-weight: 600;
   color: #ffffff;
@@ -710,7 +720,7 @@ button {
 .formInputFile {
   border: none;
   outline: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--main-font-family);
 }
 .formInputSmall,
 .formInputFile {

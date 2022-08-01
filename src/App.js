@@ -11,7 +11,7 @@ import Footer from "./components/Footer/Footer";
 const App = () => {
   return (
     <div>
-      <h1>Esclusive Real Estate</h1>
+      <h1>Exclusive Real Estate</h1>
       <Routes>
         <Route path="/" element={<ExplorePage />} />
         <Route path="/forgot-password" element={<ForgotPasswordPage />} />
