@@ -15,15 +15,15 @@ const Footer = () => {
             <nav className="navbar__nav">
                 <ul className="navbar__list">
                     <li className="navbar__list-item" onClick={() => navigate("/")}>
-                        <ExploreIcon fill={pathMatchesRoute("/") ? "#ffd700" : "#9F8B1A"} />
+                        <ExploreIcon fill={pathMatchesRoute("/") ? "#ffd700" : "#eeebe5"} />
                         <p className={pathMatchesRoute("/") ? "navbar__list-item__name--active" : "navbar__list-item__name"}>Explore</p>
                     </li>
                     <li className="navbar__list-item" onClick={() => navigate("/offers")}>
-                        <OffersIcon fill={pathMatchesRoute("/offers") ? "#ffd700" : "#9F8B1A"} />
+                        <OffersIcon fill={pathMatchesRoute("/offers") ? "#ffd700" : "#eeebe5"} />
                         <p className={pathMatchesRoute("/offers") ? "navbar__list-item__name--active" : "navbar__list-item__name"}>Offers</p>
                     </li>
                     <li className="navbar__list-item" onClick={() => navigate("/profile")}>
-                        <PersonOutlineIcon fill={pathMatchesRoute("/profile") ? "#ffd700" : "#9F8B1A"} />
+                        <PersonOutlineIcon fill={pathMatchesRoute("/profile") ? "#ffd700" : "#eeebe5"} />
                         <p className={pathMatchesRoute("/profile") ? "navbar__list-item__name--active" : "navbar__list-item__name"}>Profile</p>
                     </li>
                 </ul>
