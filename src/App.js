@@ -7,11 +7,13 @@ import SignUpPage from "./Pages/SignUpPage/SignUpPage";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 // import ProfilePage from "./Pages/ProfilePage/ProfilePage";
 import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 const App = () => {
   return (
     <div>
-      <h1>Exclusive Real Estate</h1>
+      {/* <h1>Exclusive Real Estate</h1> */}
+      <Header />
       <Routes>
         <Route path="/" element={<ExplorePage />} />
         <Route path="/forgot-password" element={<ForgotPasswordPage />} />

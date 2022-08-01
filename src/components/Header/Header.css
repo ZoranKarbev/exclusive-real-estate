@@ -1,0 +1,7 @@
+.header__title {
+    background-color: var(--midnight-blue);
+    color: var(--gold-web-golden);
+    text-align: center;
+    margin-top: 0;
+    padding: 1rem;
+}
