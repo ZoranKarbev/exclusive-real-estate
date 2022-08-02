@@ -674,23 +674,23 @@ height: 34px;
   border-radius: 0.4rem;
 }
 
-.profileDetailsHeader {
+.profile-details-header {
   display: flex;
   justify-content: space-between;
   max-width: 500px;
 }
 
-.personalDetailsText {
+.profile-details-text {
   font-weight: 600;
 }
 
-.changePersonalDetails {
+.change-personal-details {
   cursor: pointer;
   font-weight: 600;
-  color: #00cc66;
+  color: var(--midnight-blue);
 }
 
-.profileCard {
+.profil-card {
   background-color: #ffffff;
   border-radius: 1rem;
   padding: 1rem;
@@ -703,28 +703,28 @@ height: 34px;
   flex-direction: column;
 }
 
-.profileName,
-.profileEmail,
+.profile__name,
+.profile__email,
 .profileAddress,
 .profileAddressActive,
-.profileEmailActive,
-.profileNameActive {
+.profile__email--active,
+.profile__name--active {
   all: unset;
   margin: 0.3rem 0;
   font-weight: 600;
   width: 100%;
 }
-.profileNameActive {
+.profile__name--active {
   background-color: rgba(44, 44, 44, 0.1);
 }
 
-.profileEmail,
+.profile__email,
 .profileAddress,
 .profileAddressActive,
-.profileEmailActive {
+.profile__email--active {
   font-weight: 500;
 }
-.profileEmailActive {
+.profile__email--active {
   background-color: rgba(44, 44, 44, 0.1);
 }
 

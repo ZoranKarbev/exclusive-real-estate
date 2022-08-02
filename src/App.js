@@ -7,28 +7,29 @@ import OffersPage from "./Pages/OffersPage/OffersPage";
 import LoginPage from "./Pages/LoginPage/LoginPage";
 import SignUpPage from "./Pages/SignUpPage/SignUpPage";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
-// import ProfilePage from "./Pages/ProfilePage/ProfilePage";
+import ProfilePage from "./Pages/ProfilePage/ProfilePage";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import ProfilePage from "./Pages/ProfilePage/ProfilePage";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 const App = () => {
   return (
-    <div>
-      {/* <h1>Exclusive Real Estate</h1> */}
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<ExplorePage />} />
         <Route path="/forgot-password" element={<ForgotPasswordPage />} />
         <Route path="/offers" element={<OffersPage />} />
-        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/profile" element={<PrivateRoute />}>
+          <Route path="/profile" element={<ProfilePage />} />
+        </Route>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
       <ToastContainer />
-    </div>
+    </>
   )
 };
 

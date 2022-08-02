@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { getAuth, updateProfile } from "firebase/auth";
 import { updateDoc, doc } from "firebase/firestore";
 import { db } from "../../firebase.config";
@@ -46,19 +46,19 @@ const ProfilePage = () => {
 				</button>
 			</div>
 			<main>
-				<div className="profileDetailsHeader">
-					<p className="profileDetailsText">Personal Details</p>
-					<p className="changePersonalDetails" onClick={() => {
+				<div className="profile-details-header">
+					<p className="profile-details-text">Personal Details</p>
+					<p className="change-personal-details" onClick={() => {
 						changeDetails && handleSubmit()
 						setChangeDetails(prevState => !prevState)
 					}}>
 						{changeDetails ? "done" : "change"}
 					</p>
 				</div>
-				<div className="profileCard">
+				<div className="profile-card">
 					<form>
-						<input type="text" id="name" className={!changeDetails ? "profileName" : "profileNameActive"} disabled={!changeDetails} value={name} onChange={handleChange} />
-						<input type="text" id="email" className={!changeDetails ? "profileEmail" : "profileEmailActive"} disabled={!changeDetails} value={email} onChange={handleChange} />
+						<input type="text" id="name" className={!changeDetails ? "profile__name" : "profile__name--active"} disabled={!changeDetails} value={name} onChange={handleChange} />
+						<input type="text" id="email" className={!changeDetails ? "profile__email" : "profile__email--active"} disabled={!changeDetails} value={email} onChange={handleChange} />
 					</form>
 				</div>
 			</main>
