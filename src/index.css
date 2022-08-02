@@ -107,11 +107,13 @@ button {
 .listingDetails,
 .category,
 .explore {
-  width:100%;
-  padding-right:1rem;
+  width: 100%;
+  padding-right: 1rem;
   padding-left:1rem;
-  margin-right:auto;
-  margin-left:auto 
+  margin-right: auto;
+  margin-left: auto; 
+  overflow-y: visible;
+  height: 100vh;
 }
 @media only screen and (min-width: 576px) {
   .page__container,
@@ -188,6 +190,8 @@ button {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .login-form,

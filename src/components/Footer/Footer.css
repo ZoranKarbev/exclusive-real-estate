@@ -47,3 +47,18 @@
     width: 36px;
     height: 36px;
 }
+
+@media only screen and (min-width: 754px) {
+  .navbar__list {
+    justify-content: center;
+    gap: 7.4rem;  
+  }
+  .navbar__list-item {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  .navbar__list-item__name,
+  .navbar__list-item__name--active {
+    margin-bottom: 4px;
+  }
+}

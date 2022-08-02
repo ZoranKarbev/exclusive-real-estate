@@ -45,7 +45,7 @@ const SignUpPage = () => {
             Forgot Password?
           </Link>
           <Link to="/login" className="register-link">
-            Aleready have an account? Log In NOW!
+            Have an account? Log In NOW!
           </Link>
         </main>
       </div>

@@ -1,4 +1,5 @@
 .header__title {
+    font-size: 1.5rem;
     background-color: var(--midnight-blue);
     color: var(--gold-web-golden);
     text-align: center;
@@ -6,3 +7,9 @@
     padding: 1rem;
     letter-spacing: 2px;
 }
+
+@media only screen and (min-width: 754px) {
+  .header__title {
+    font-size: 2rem;
+  }
+}   
