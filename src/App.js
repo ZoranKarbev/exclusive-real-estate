@@ -8,6 +8,7 @@ import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 // import ProfilePage from "./Pages/ProfilePage/ProfilePage";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import ProfilePage from "./Pages/ProfilePage/ProfilePage";
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
         <Route path="/" element={<ExplorePage />} />
         <Route path="/forgot-password" element={<ForgotPasswordPage />} />
         <Route path="/offers" element={<OffersPage />} />
-        <Route path="/profile" element={<LoginPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="*" element={<NotFoundPage />} />

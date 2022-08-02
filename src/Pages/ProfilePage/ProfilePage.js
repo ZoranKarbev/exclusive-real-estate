@@ -1,7 +1,15 @@
+import { useEffect, useState } from "react"
+import { getAuth } from "firebase/auth"
 const ProfilePage = () => {
-    return (
-        <div>Profile Page</div>
-    )
-}
+	const [user, setUser] = useState(null)
+	const auth = getAuth();
+	useEffect(() => {
+		setUser(auth.currentUser);
+	}, [])
 
-export default ProfilePage
+	return (
+		user ? <h1>USER: {user.displayName}</h1> : <h1>Please Log in!</h1>
+	)
+};
+
+export default ProfilePage;
