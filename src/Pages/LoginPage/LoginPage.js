@@ -28,9 +28,7 @@ const LoginPage = () => {
 							<input type={showPassword ? "text" : "password"} className="password-input" placeholder="Password" id="password" value={password} onChange={handleChange} />
 							<img src={visibilityIcon} alt="show password" className="show-password" onClick={() => setShowPassword(prevState => !prevState)} />
 						</div>
-						<Link to="/forgot-password" className="forgot-password-link">
-							Forgot Password?
-						</Link>
+
 						<div className="login-bar">
 							<p className="login-text">
 								Log In
@@ -41,6 +39,10 @@ const LoginPage = () => {
 						</div>
 					</form>
 					{/* Google Oath */}
+					<Link to="/forgot-password" className="forgot-password-link">
+						Forgot Password?
+					</Link>
+
 					<Link to="/sign-up" className="register-link">
 						Don't have an account? Sign Up NOW!
 					</Link>

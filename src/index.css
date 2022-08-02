@@ -43,7 +43,7 @@ button {
 .input,
 .password-input,
 .email-input,
-.nameInput,
+.name-input,
 .textarea {
   box-shadow: rgba(0, 0, 0, 0.11);
   border: none;
@@ -60,7 +60,7 @@ button {
   .input,
   .password-input,
   .email-input,
-  .nameInput,
+  .name-input,
   .textarea {
     padding: 0 4rem;
   }
@@ -191,18 +191,18 @@ button {
 }
 
 .login-form,
-.signUp-form {
+.signup-form {
   max-width: 540px;
   margin: 0 auto;
 }
 
-.nameInput {
-  margin-bottom: 2rem;
+.name-input {
+  margin-bottom: 1.5rem;
   background: url('./assets/svg/badgeIcon.svg') #ffffff 2.5% center no-repeat;
 }
 
 .email-input {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   background: url('./assets/svg/personIcon.svg') #ffffff 2.5% center no-repeat;
 }
 
@@ -211,7 +211,7 @@ button {
 }
 
 .password-input {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   background: url('./assets/svg/lockIcon.svg') #ffffff 2.5% center no-repeat;
 }
 
@@ -228,11 +228,19 @@ button {
   color: var(--midnight-blue);
   font-weight: 600;
   text-align: center;
+  width: fit-content;
+  padding: 0.4rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
+.forgot-password-link:focus {
+  outline: 2px solid var(--midnight-blue);
+  border-radius: 0.1rem;
+} 
 
 .login-bar,
-.signUpBar {
-  margin-top: 3rem;
+.signup-bar {
+  /* margin-top: 3rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,20 +249,20 @@ button {
 }
 
 .login-button,
-.signUpButton,
+.signup-button,
 .login-text,
-.signUpText {
+.signup-text {
   cursor: pointer;
 }
 
 .login-text,
-.signUpText {
+.signup-text {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .login-button,
-.signUpButton {
+.signup-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,11 +272,19 @@ button {
   color: var(--gold-web-golden);
   border-radius: 50%;
 }
+
 .login-button svg,
-.signUpButton svg {
+.signup-button svg {
 fill: var(--isabelline);
 width: 34px;
 height: 34px;
+}
+
+.login-button:active svg,
+.login-button:focus svg,
+.signup-button:active svg,
+.signup-button:focus svg {
+  fill: var(--gold-web-golden);
 }
 
 .socialLogin {
@@ -297,11 +313,23 @@ height: 34px;
 }
 
 .register-link {
-  margin-top: 3rem;
+  margin-top: 5rem;
   color: var(--midnight-blue);
+  border: 2px solid var(--midnight-blue);
   font-weight: 600;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 0.4rem;
+  margin: 0 auto;
+}
+
+.register-link:hover,
+.register-link:active,
+.register-link:focus {
+  color: var(--isabelline);
+  background-color: var(--midnight-blue);  
 }
 
 @media (min-width: 1217px) {
