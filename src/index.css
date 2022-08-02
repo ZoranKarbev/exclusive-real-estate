@@ -323,12 +323,16 @@ height: 34px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 5rem;
-  padding: 1rem;
+  padding: 0.5rem;
   width: fit-content;
   border-radius: 0.4rem;
   margin: 0 auto;
 }
-
+@media only screen and (min-width: 450px) {
+  .register-link {
+    padding: 1rem;
+  }
+}
 .register-link:hover,
 .register-link:active,
 .register-link:focus {
