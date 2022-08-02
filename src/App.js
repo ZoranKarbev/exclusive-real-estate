@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css";
 import ExplorePage from "./Pages/ExplorePage/ExplorePage";
 import ForgotPasswordPage from "./Pages/ForgotPasswordPage/ForgotPasswordPage";
 import OffersPage from "./Pages/OffersPage/OffersPage";
@@ -25,6 +27,7 @@ const App = () => {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
+      <ToastContainer />
     </div>
   )
 };
