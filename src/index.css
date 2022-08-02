@@ -657,21 +657,21 @@ height: 34px;
   margin-bottom: 10rem;
 }
 
-.profileHeader {
+.profile-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logOut {
+.log-out-btn {
   cursor: pointer;
   font-family: var(--main-font-family);
   font-size: 1rem;
   font-weight: 600;
-  color: #ffffff;
-  background-color: #00cc66;
+  color: var(--isabelline);
+  background-color: var(--midnight-blue);
   padding: 0.25rem 0.75rem;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
 }
 
 .profileDetailsHeader {
