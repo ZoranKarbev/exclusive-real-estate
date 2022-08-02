@@ -23,8 +23,8 @@ const Footer = () => {
                         <p className={pathMatchesRoute("/offers") ? "navbar__list-item__name--active" : "navbar__list-item__name"}>Offers</p>
                     </li>
                     <li className="navbar__list-item" onClick={() => navigate("/profile")}>
-                        <PersonOutlineIcon fill={pathMatchesRoute("/profile") ? "#ffd700" : "#eeebe5"} />
-                        <p className={pathMatchesRoute("/profile") ? "navbar__list-item__name--active" : "navbar__list-item__name"}>Profile</p>
+                        <PersonOutlineIcon fill={pathMatchesRoute("/profile") || pathMatchesRoute("/sign-up") ? "#ffd700" : "#eeebe5"} />
+                        <p className={pathMatchesRoute("/profile") || pathMatchesRoute("/sign-up") ? "navbar__list-item__name--active" : "navbar__list-item__name"}>Profile</p>
                     </li>
                 </ul>
             </nav>
